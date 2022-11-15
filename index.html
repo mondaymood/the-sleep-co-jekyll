@@ -1,8 +1,47 @@
 ---
 layout: default
 title: Homepage
+fruit: 
+ - title: Apple
+   description: The best fruit
+ - title: Pineapple
+   description: The best fruit  
+ - title: Banana
+   description: The best fruit
+ - title: Dragonfruit
+   description: The best fruit   
 ---
+
+
 <section>
-    <h1>Welcome to your homepage!</h1>
-    <a href="about.html">About</a>
+
+    {% for item in page.fruit %}
+    <div class="card">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+    </div>
+    {% endfor %}
+
+
+    <!-- <div class="card">
+        <h2>Apple</h2>
+        <p>The best fruit.</p>
+    </div>
+
+    <div class="card">
+        <h2>Pineapple</h2>
+        <p>Not a fan.</p>
+    </div>
+
+    <div class="card">
+        <h2>Banana</h2>
+        <p>A boring fruit.</p>
+    </div>
+
+    <div class="card">
+        <h2>Dragonfruit</h2>
+        <p>Very good fruit.</p>
+    </div> -->
+
+
 </section>

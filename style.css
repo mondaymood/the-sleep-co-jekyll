@@ -8,6 +8,15 @@ section {
     padding: 5%;
 }
 
+.card {
+    padding: 5rem 2rem;
+    background-color: lavender;
+    border-radius: 1rem;
+    max-width: 40%;
+    display: inline-block;
+    margin: 1rem;
+}
+
 header,
 footer {
     padding: 5%;
